@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow">
+<title>Sugargoo spreadsheet | Shoes, Hoodies &amp; Clothing Finds</title>
+<meta name="description" content="Browse HipobuyFind listings by category, search by item ID, compare CNY reference prices, and check sizing, warehouse photos and shipping before ordering.">
+<style>
+:root{color-scheme:light;--ink:#172b23;--muted:#4d6459;--line:#d4e0d9;--green:#12563c;--paper:#f4f7f3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+.wrap{width:min(68rem,calc(100% - 2rem));margin-inline:auto}
+header{background:#123b2d;color:#fff;text-align:center;padding:clamp(3rem,9vw,7rem) 0}
+header p{max-width:42rem;margin:1rem auto;color:#e1eee6}
+h1,h2{font-family:Georgia,serif;line-height:1.1}
+h1{font-size:clamp(2.5rem,7vw,5rem);margin:0;letter-spacing:-.045em}
+h2{font-size:clamp(1.75rem,4vw,2.55rem);margin:0 0 .65rem}
+.actions{display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap;margin-top:1.6rem}
+.button{display:inline-block;border:1px solid #c7efaf;border-radius:.65rem;padding:.65rem 1.1rem;background:#c7efaf;color:#123b2d;font-weight:750;text-decoration:none}
+.button.alt{background:transparent;color:#fff}
+main section{margin-block:clamp(2rem,5vw,4rem)}
+p{margin:.5rem 0 1rem}
+.controls{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.25rem}
+.controls label{flex:1 1 14rem;font-weight:650}
+input,select{display:block;width:100%;padding:.65rem .8rem;margin-top:.3rem;border:1px solid #809389;border-radius:.5rem;background:white;color:var(--ink);font:inherit}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid #b86413;outline-offset:3px}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:.8rem;background:white}
+table{width:100%;min-width:33rem;border-collapse:collapse;text-align:left}
+caption{text-align:left;padding:.65rem 1rem;color:var(--muted)}
+th,td{padding:.7rem 1rem;border-top:1px solid var(--line)}
+thead{background:#e8f0ea}
+a{color:var(--green);text-underline-offset:.15em}
+.price{white-space:nowrap;font-variant-numeric:tabular-nums}
+#status,footer{color:var(--muted)}
+.guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:1rem;padding:0;list-style:none}
+.guide li,details{background:white;border:1px solid var(--line);border-radius:.8rem;padding:1rem}
+.guide p,details p{margin:.4rem 0 0}
+details+details{margin-top:.6rem}
+summary{font-weight:700;cursor:pointer}
+footer{border-top:1px solid var(--line);padding-block:1.25rem;text-align:center}
+</style>
+<link rel="canonical" href="https://kakobuyfinds.github.io/wjead/">
+</head>
+<body>
+<!-- index.html
+搜索样本 https://www.sugargooo.com/、https://sugargootab.com/、https://sugargoofindsx.com/。样本页面已有分类、搜索或 QC 指南。本页将商品编号、人民币标价和商品详情放在同一张可筛选表内，并说明如何核对运费和 SKU。搜索结果次序因地区和时间而异。
+目录来源 https://hipobuyfind.com/ 。以下为公开目录中的 6 条静态快照，实时价格与库存以商品详情为准。
+Google 和 Bing 尚未提交。发布到最终 HTTPS URL 后，在 Google Search Console 的网址检查中请求编入索引，在 Bing Webmaster Tools 的 URL Submission 中提交同一 URL。发布地址确定后在 head 中加入自引用 canonical。
+Google https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
+Bing https://www.bing.com/webmasters/help/?topicid=62f2860b
+-->
+<header>
+<div class="wrap">
+<h1>Sugargoo spreadsheet</h1>
+<p>Compare shoes, hoodies, T-shirts and jackets from HipobuyFind. Use the item ID to find a listing again and check the seller’s options before ordering.</p>
+<div class="actions">
+<a class="button" href="https://hipobuyfind.com">Sugargoo spreadsheet</a>
+<a class="button alt" href="https://hipobuyfind.com">Buy it now</a>
+</div>
+</div>
+</header>
+<main class="wrap">
+<section aria-labelledby="catalog">
+<h2 id="catalog">HipobuyFind product directory</h2>
+<p>Prices are CNY reference prices and exclude shipping. Open an item to check its current price, size options and availability.</p>
+<div class="controls" hidden>
+<label>Search by name or item ID <input id="query" type="search" placeholder="Canvas or 148188"></label>
+<label>Category <select id="category">
+<option value="">All categories</option>
+<option>Shoes</option><option>Hoodies</option><option>T-shirts</option><option>Jackets</option>
+</select></label>
+</div>
+<p id="status" role="status" hidden></p>
+<div class="table-wrap" role="region" aria-label="Product directory" tabindex="0">
+<table>
+<caption>Selected listings from HipobuyFind</caption>
+<thead><tr><th scope="col">Product</th><th scope="col">Category</th><th scope="col">Item ID</th><th scope="col">Price</th></tr></thead>
+<tbody>
+<tr><th scope="row"><a href="https://hipobuyfind.com/goods-148188.html">Black Canvas Low-Top Sneakers with Gum Sole</a></th><td>Shoes</td><td>148188</td><td class="price">¥450.00</td></tr>
+<tr><th scope="row"><a href="https://hipobuyfind.com/goods-148191.html">Cream Chunky Sneakers with Wide Laces</a></th><td>Shoes</td><td>148191</td><td class="price">¥350.00</td></tr>
+<tr><th scope="row"><a href="https://hipobuyfind.com/goods-154936.html">Gray Hooded Hoodie</a></th><td>Hoodies</td><td>154936</td><td class="price">¥300.00</td></tr>
+<tr><th scope="row"><a href="https://hipobuyfind.com/goods-154917.html">Fleece-Lined Hoodie</a></th><td>Hoodies</td><td>154917</td><td class="price">¥170.00</td></tr>
+<tr><th scope="row"><a href="https://hipobuyfind.com/goods-154920.html">Graphic Short-Sleeve T-Shirt</a></th><td>T-shirts</td><td>154920</td><td class="price">¥105.00</td></tr>
+<tr><th scope="row"><a href="https://hipobuyfind.com/goods-154851.html">Hooded Quick-Dry Jacket</a></th><td>Jackets</td><td>154851</td><td class="price">¥157.14</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section aria-labelledby="ordering">
+<h2 id="ordering">What to check before ordering</h2>
+<ul class="guide">
+<li><strong>Match the seller and SKU</strong><p>Open the HipobuyFind item, locate the seller link, and confirm the listing and variant when opening it in your agent account. Compare the seller’s measurements with a garment you own.</p></li>
+<li><strong>Review warehouse QC photos</strong><p>Check the color, size label, stitching and any measurements visible in your warehouse photos. Check the return window while the item is still at the warehouse.</p></li>
+<li><strong>Estimate the delivered cost</strong><p>Add the item price, domestic delivery, agent fees and international shipping. Use your destination and expected parcel dimensions when comparing shipping lines.</p></li>
+</ul>
+</section>
+<section aria-labelledby="faq">
+<h2 id="faq">Frequently asked questions</h2>
+<details><summary>Does the spreadsheet price include shipping?</summary><p>The table shows the listed item price in CNY. Confirm delivery charges and any applicable duties for your destination before paying.</p></details>
+<details><summary>Are the product photos warehouse QC photos?</summary><p>Use listing photos to compare styles and review the warehouse QC photos for your specific order when your agent makes them available.</p></details>
+<details><summary>What if a product link has changed?</summary><p>Search the item ID or product name on HipobuyFind, then check the seller listing and your preferred size or color again.</p></details>
+</section>
+</main>
+<footer><div class="wrap">Independent shopping guide. Catalog listings sourced from <a href="https://hipobuyfind.com">HipobuyFind</a>.</div></footer>
+<script>
+const query = document.querySelector('#query');
+const category = document.querySelector('#category');
+const status = document.querySelector('#status');
+const rows = Array.from(document.querySelectorAll('tbody tr'));
+function filterProducts() {
+  const terms = query.value.toLowerCase().trim().split(/\s+/);
+  let count = 0;
+  for (const row of rows) {
+    const text = row.textContent.toLowerCase();
+    const matchesCategory = !category.value || row.cells[1].textContent === category.value;
+    row.hidden = !(matchesCategory && terms.every(term => text.includes(term)));
+    if (!row.hidden) count++;
+  }
+  status.textContent = count ? count + (count === 1 ? ' listing' : ' listings') : 'No matching listings. Try another search or category.';
+}
+query.addEventListener('input', filterProducts);
+category.addEventListener('change', filterProducts);
+document.querySelector('.controls').hidden = false;
+status.hidden = false;
+filterProducts();
+</script>
+</body>
+</html>
